@@ -17,7 +17,7 @@ function terraform_prompt()
     fi
 }
 
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\$(terraform_prompt)\[\033[00m\] $ "
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(git_branch)\$(terraform_prompt)\[\033[00m\] $ "
 
 ```
 after run in terminal:
